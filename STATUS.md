@@ -33,9 +33,9 @@ This document tracks the release status and roadmap for the entire PDFCraft ecos
 - [x] `FieldRenderer` abstractions
 - [x] `FontManager` for TTF/OTF external fonts
 
-### Phase 3: Template Management & Shapes (Up Next)
-- [ ] **Week 5**: Template Loading & Saving utilities, Field Registry improvements.
-- [ ] **Week 7**: Advanced Shapes Plugins (Line, Rectangle, Circle).
+### Phase 3: Template Management & Shapes (Completed)
+- [x] **Week 5**: Template Loading & Saving utilities, Field Registry improvements.
+- [x] **Week 7**: Advanced Shapes Plugins (Line, Rectangle, Circle).
 
 ### Phase 4: Designer Scaffold
 - [ ] **Week 8-9**: Canvas UI, Selection, Movement, Deletion.

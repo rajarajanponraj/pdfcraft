@@ -8,6 +8,9 @@ packages:
 command:
   bootstrap:
     usePubspecOverrides: true
+  version:
+    message: "chore(release): publish packages"
+    workspaceChangelog: true
 
 scripts:
   analyze:
@@ -26,3 +29,7 @@ scripts:
     description: Run build_runner in all packages that depend on it.
     packageFilters:
       dependsOn: build_runner
+  
+  release:
+    run: dart scripts/release.dart
+    description: Automatically bump versions, update changelogs, push to GitHub, and publish to pub.dev.

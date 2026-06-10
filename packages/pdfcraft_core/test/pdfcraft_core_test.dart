@@ -83,4 +83,39 @@ void main() {
       expect(notFound, isNull);
     });
   });
+
+  group('TemplateCodec', () {
+    test('encode and decode work symmetrically', () {
+      const template = Template(
+        version: '1.0',
+        pages: [
+          PageSchema(
+            id: 'page1',
+            width: 200,
+            height: 200,
+            fields: [
+              FieldSchema(
+                id: 'field1',
+                type: 'text',
+                x: 10,
+                y: 10,
+                width: 100,
+                height: 50,
+                data: {'text': 'Hello'},
+              )
+            ],
+          )
+        ],
+      );
+
+      final jsonString = TemplateCodec.encode(template);
+      expect(jsonString, isNotEmpty);
+      expect(jsonString.contains('"version": "1.0"'), isTrue);
+      expect(jsonString.contains('"id": "page1"'), isTrue);
+
+      final decoded = TemplateCodec.decode(jsonString);
+      expect(decoded.version, '1.0');
+      expect(decoded.pages.first.fields.first.data['text'], 'Hello');
+    });
+  });
 }

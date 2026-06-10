@@ -1,14 +1,20 @@
 import 'package:pdfcraft_core/pdfcraft_core.dart';
 import 'package:pdf/widgets.dart' as pw;
 
+import '../renderers/circle_renderer.dart';
 import '../renderers/field_renderer.dart';
 import '../renderers/image_renderer.dart';
+import '../renderers/line_renderer.dart';
+import '../renderers/rectangle_renderer.dart';
 import '../renderers/text_renderer.dart';
 
 class GeneratorRegistry {
   GeneratorRegistry._() {
     register(TextRenderer());
     register(ImageRenderer());
+    register(LineRenderer());
+    register(RectangleRenderer());
+    register(CircleRenderer());
   }
 
   static final GeneratorRegistry instance = GeneratorRegistry._();
