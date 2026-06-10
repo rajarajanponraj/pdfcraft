@@ -1,0 +1,28 @@
+name: pdfcraft
+repository: https://github.com/rajarajanponraj/pdfcraft
+
+packages:
+  - packages/*
+  - examples/*
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  analyze:
+    exec: dart analyze .
+    description: Run dart analyze in all packages.
+  format:
+    exec: dart format .
+    description: Run dart format in all packages.
+  test:
+    exec: flutter test
+    description: Run flutter test in all packages.
+    packageFilters:
+      dirExists: test
+  build_runner:
+    exec: dart run build_runner build --delete-conflicting-outputs
+    description: Run build_runner in all packages that depend on it.
+    packageFilters:
+      dependsOn: build_runner

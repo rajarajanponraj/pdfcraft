@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/pdfcraft_core/melos_pdfcraft_core.iml" filepath="$PROJECT_DIR$/packages/pdfcraft_core/melos_pdfcraft_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/pdfcraft_generator/melos_pdfcraft_generator.iml" filepath="$PROJECT_DIR$/packages/pdfcraft_generator/melos_pdfcraft_generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_pdfcraft.iml" filepath="$PROJECT_DIR$/melos_pdfcraft.iml" />
+    </modules>
+  </component>
+</project>

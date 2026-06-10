@@ -1,0 +1,26 @@
+name: pdfcraft_core
+description: "Core models, schema definitions, and plugin contracts for the PDFCraft ecosystem."
+version: 0.1.0
+homepage: https://github.com/rajarajanponraj/pdfcraft
+repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_core
+issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
+
+environment:
+  sdk: ^3.3.0
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
+  build_runner: ^2.4.9
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+
+flutter:
