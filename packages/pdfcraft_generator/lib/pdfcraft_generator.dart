@@ -1,4 +1,3 @@
-library pdfcraft_generator;
 
 export 'src/fonts/font_manager.dart';
 export 'src/generator_engine.dart';

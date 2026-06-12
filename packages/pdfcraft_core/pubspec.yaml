@@ -1,6 +1,6 @@
 name: pdfcraft_core
 description: "Core models, schema definitions, and plugin contracts for the PDFCraft ecosystem."
-version: 0.1.0
+version: 1.0.0
 homepage: https://github.com/rajarajanponraj/pdfcraft
 repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_core
 issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues

@@ -1,4 +1,3 @@
-library pdfcraft_core;
 
 export 'src/models/schema/field_schema.dart';
 export 'src/models/schema/page_schema.dart';

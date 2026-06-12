@@ -1,12 +1,11 @@
-import 'package:pdfcraft_core/pdfcraft_core.dart';
 import 'package:pdf/widgets.dart' as pw;
-
-import '../renderers/circle_renderer.dart';
-import '../renderers/field_renderer.dart';
-import '../renderers/image_renderer.dart';
-import '../renderers/line_renderer.dart';
-import '../renderers/rectangle_renderer.dart';
-import '../renderers/text_renderer.dart';
+import 'package:pdfcraft_core/pdfcraft_core.dart';
+import 'package:pdfcraft_generator/src/renderers/circle_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/field_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/image_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/line_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/rectangle_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/text_renderer.dart';
 
 class GeneratorRegistry {
   GeneratorRegistry._() {
@@ -25,10 +24,10 @@ class GeneratorRegistry {
     _renderers[renderer.type] = renderer;
   }
 
-  pw.Widget? renderField(FieldSchema field, pw.Context context) {
+  pw.Widget? renderField(FieldSchema field, pw.Context context, {bool interactive = false}) {
     final renderer = _renderers[field.type];
     if (renderer != null) {
-      return renderer.render(field, context);
+      return renderer.render(field, context, interactive: interactive);
     }
     return null;
   }

@@ -1,4 +1,4 @@
-import '../plugin/pdf_craft_plugin.dart';
+import 'package:pdfcraft_core/src/plugin/pdf_craft_plugin.dart';
 
 /// Central registry for managing PDFCraft plugins.
 class PluginRegistry {
@@ -19,7 +19,7 @@ class PluginRegistry {
     _builders.remove(name);
   }
 
-  /// Instantiates a plugin by [name] and optionally [deserialize]s it with [json].
+  /// Instantiates a plugin by [name] and optionally deserializes it with [json].
   PdfCraftPlugin? create(String name, [Map<String, dynamic>? json]) {
     final builder = _builders[name];
     if (builder != null) {

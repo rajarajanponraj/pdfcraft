@@ -2,16 +2,16 @@ import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdfcraft_core/pdfcraft_core.dart';
 
-import '../fonts/font_manager.dart';
-import 'field_renderer.dart';
+import 'package:pdfcraft_generator/src/fonts/font_manager.dart';
+import 'package:pdfcraft_generator/src/renderers/field_renderer.dart';
 
 class TextRenderer implements FieldRenderer {
   @override
   String get type => 'text';
 
   @override
-  pw.Widget render(FieldSchema field, pw.Context context) {
-    final text = field.data['text']?.toString() ?? '';
+  pw.Widget render(FieldSchema field, pw.Context context, {bool interactive = false}) {
+    final text = field.data['text'] as String? ?? '';
     final style = field.style;
 
     pw.Font? font;
@@ -22,7 +22,7 @@ class TextRenderer implements FieldRenderer {
     // Default to Helvetica if no font found or specified
     font ??= pw.Font.helvetica();
 
-    double fontSize = style?.fontSize ?? 12.0;
+    final fontSize = style?.fontSize ?? 12.0;
 
     PdfColor? color;
     if (style?.fillColor != null) {

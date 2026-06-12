@@ -1,0 +1,22 @@
+name: pdfcraft_designer
+description: "Visual drag-and-drop designer and canvas UI for the PDFCraft ecosystem."
+version: 1.0.0
+homepage: https://github.com/rajarajanponraj/pdfcraft
+repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_designer
+issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
+
+environment:
+  sdk: ^3.3.0
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pdfcraft_core: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
+
+flutter:

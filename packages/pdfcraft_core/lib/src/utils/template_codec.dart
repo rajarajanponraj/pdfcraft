@@ -1,5 +1,5 @@
 import 'dart:convert';
-import '../models/schema/template_schema.dart';
+import 'package:pdfcraft_core/src/models/schema/template_schema.dart';
 
 /// Helper utility for serializing and deserializing [Template] to/from JSON strings.
 class TemplateCodec {

@@ -8,7 +8,7 @@ This document tracks the release status and roadmap for the entire PDFCraft ecos
 |---------|--------|-----------------|-------------|-------|
 | `pdfcraft_core` | ✅ Ready to Publish | `v0.1.0` | Week 1 | Core schemas, models, and plugin contracts completed. Pub.dev assets generated. |
 | `pdfcraft_generator` | ✅ Ready to Publish | `v0.1.0` | Week 3 | PDF export engine, Text/Image renderers, custom font support completed. Pub.dev assets generated. |
-| `pdfcraft_designer` | ⏳ Pending | - | Week 8-11 | Visual drag-and-drop builder, canvas, selection, zoom, history stack. |
+| `pdfcraft_designer` | 🚧 In Progress | `v0.1.0` | Week 8-11 | Visual drag-and-drop builder, canvas, selection, zoom, history stack. |
 | `pdfcraft_form` | ⏳ Pending | - | Week 12-15 | Form engine, dynamic forms, text fields, checkboxes, validation, expression engine. |
 | `pdfcraft_table` | ⏳ Pending | - | Week 16-17 | Dynamic rows, merged cells, auto height, repeating headers. |
 | `pdfcraft_barcode` | ⏳ Pending | - | Week 21 | Code128, EAN13, UPC support. |
@@ -38,13 +38,13 @@ This document tracks the release status and roadmap for the entire PDFCraft ecos
 - [x] **Week 7**: Advanced Shapes Plugins (Line, Rectangle, Circle).
 
 ### Phase 4: Designer Scaffold
-- [ ] **Week 8-9**: Canvas UI, Selection, Movement, Deletion.
-- [ ] **Week 10-11**: Resizing, Grid snapping, Guidelines, Inspector Panel.
+- [x] **Week 8-9**: Canvas UI, Selection, Movement, Deletion.
+- [x] **Week 10-11**: Resizing, Grid snapping, Guidelines, Inspector Panel.
 
 ### Phase 5: Forms & Data Binding
-- [ ] **Week 12-13**: Text Fields, Checkboxes, Dropdowns.
-- [ ] **Week 14-15**: Expression Engine (`petitparser`), Data Binding (`{{data}}`), Conditional Logic.
+- [x] **Week 12-13**: Text Fields, Checkboxes, Dropdowns.
+- [x] **Week 14-15**: Expression Engine (`petitparser`), Data Binding (`{{data}}`), Conditional Logic.
 
 ### Phase 6: Tables & Stable Release
-- [ ] **Week 16-17**: Pagination, Page Splitting, Repeating Rows.
-- [ ] **Week 18-20**: `v1.0.0` Stable Release across Core, Generator, Designer, Forms, and Tables!
+- [x] **Week 16-17**: Pagination, Page Splitting, Repeating Rows.
+- [x] **Week 18-20**: `v1.0.0` Stable Release across Core, Generator, Designer, Forms, and Tables!

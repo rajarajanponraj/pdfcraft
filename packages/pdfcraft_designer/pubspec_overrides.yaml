@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: pdfcraft_core
+dependency_overrides:
+  pdfcraft_core:
+    path: ..\\pdfcraft_core

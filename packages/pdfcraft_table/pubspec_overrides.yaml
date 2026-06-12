@@ -1,0 +1,8 @@
+# melos_managed_dependency_overrides: pdfcraft_core,pdfcraft_form,pdfcraft_generator
+dependency_overrides:
+  pdfcraft_core:
+    path: ..\\pdfcraft_core
+  pdfcraft_form:
+    path: ..\\pdfcraft_form
+  pdfcraft_generator:
+    path: ..\\pdfcraft_generator

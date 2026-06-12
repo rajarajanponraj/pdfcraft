@@ -1,10 +1,10 @@
-import 'package:pdfcraft_generator/pdfcraft_generator.dart';
+// ignore_for_file: avoid_print
 import 'package:pdfcraft_core/pdfcraft_core.dart';
+import 'package:pdfcraft_generator/pdfcraft_generator.dart';
 
 void main() async {
   const template = Template(
     version: '1.0',
-    pages: [],
   );
 
   final engine = PdfGeneratorEngine();

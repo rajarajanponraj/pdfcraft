@@ -3,6 +3,7 @@ repository: https://github.com/rajarajanponraj/pdfcraft
 
 packages:
   - packages/*
+  - packages/*/example
   - examples/*
 
 command:

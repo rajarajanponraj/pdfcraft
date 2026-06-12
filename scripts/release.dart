@@ -1,3 +1,4 @@
+// ignore_for_file: avoid_print
 import 'dart:io';
 
 Future<void> main(List<String> args) async {
@@ -6,7 +7,8 @@ Future<void> main(List<String> args) async {
   // 1. Check for clean git state
   final gitStatus = await Process.run('git', ['status', '--porcelain']);
   if (gitStatus.stdout.toString().trim().isNotEmpty) {
-    print('❌ Error: Working directory is not clean. Please commit or stash changes before releasing.');
+    print('❌ Error: Working directory is not clean. '
+          'Please commit or stash changes before releasing.');
     exit(1);
   }
 
@@ -22,7 +24,8 @@ Future<void> main(List<String> args) async {
   
   final versionExitCode = await versionProcess.exitCode;
   if (versionExitCode != 0) {
-    print('\n❌ Error: "melos version" failed or was cancelled. Aborting release.');
+    print('\n❌ Error: "melos version" failed or was cancelled. '
+          'Aborting release.');
     exit(1);
   }
 

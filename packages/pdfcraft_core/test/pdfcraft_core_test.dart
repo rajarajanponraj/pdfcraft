@@ -69,8 +69,8 @@ void main() {
 
   group('PluginRegistry', () {
     test('Register and create plugin', () {
-      final registry = PluginRegistry.instance;
-      registry.register('mock', () => MockPlugin());
+      final registry = PluginRegistry.instance
+        ..register('mock', MockPlugin.new);
 
       final plugin = registry.create('mock', {'savedData': 'test'}) as MockPlugin?;
       
@@ -102,9 +102,9 @@ void main() {
                 width: 100,
                 height: 50,
                 data: {'text': 'Hello'},
-              )
+              ),
             ],
-          )
+          ),
         ],
       );
 

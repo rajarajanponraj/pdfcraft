@@ -1,14 +1,15 @@
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdfcraft_core/pdfcraft_core.dart';
-import 'field_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/field_renderer.dart';
 
 class CircleRenderer implements FieldRenderer {
   @override
   String get type => 'circle';
 
   @override
-  pw.Widget render(FieldSchema field, pw.Context context) {
+  pw.Widget render(FieldSchema field, pw.Context context, {bool interactive = false}) {
+    final fillColorHex = field.data['fillColor']?.toString();
     final style = field.style;
 
     PdfColor? fillColor;
@@ -31,7 +32,7 @@ class CircleRenderer implements FieldRenderer {
         height: field.height,
         decoration: pw.BoxDecoration(
           shape: pw.BoxShape.circle,
-          color: fillColor,
+          color: fillColorHex != null ? PdfColor.fromHex(fillColorHex) : fillColor,
           border: strokeColor != null
               ? pw.Border.all(color: strokeColor, width: strokeWidth)
               : null,

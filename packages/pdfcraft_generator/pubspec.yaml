@@ -1,6 +1,6 @@
 name: pdfcraft_generator
 description: "PDF generation engine for PDFCraft, mapping abstract schemas to pw.Widget instances."
-version: 0.1.0
+version: 1.0.0
 homepage: https://github.com/rajarajanponraj/pdfcraft
 repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_generator
 issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
@@ -12,7 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  pdfcraft_core: ^0.1.0
+  pdfcraft_core: ^1.0.0
   pdf: ^3.10.8
 
 dev_dependencies:

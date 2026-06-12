@@ -1,14 +1,15 @@
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdfcraft_core/pdfcraft_core.dart';
-import 'field_renderer.dart';
+import 'package:pdfcraft_generator/src/renderers/field_renderer.dart';
 
 class RectangleRenderer implements FieldRenderer {
   @override
   String get type => 'rectangle';
 
   @override
-  pw.Widget render(FieldSchema field, pw.Context context) {
+  pw.Widget render(FieldSchema field, pw.Context context, {bool interactive = false}) {
+    final fillColorHex = field.data['fillColor']?.toString();
     final style = field.style;
 
     PdfColor? fillColor;
@@ -30,7 +31,7 @@ class RectangleRenderer implements FieldRenderer {
         width: field.width,
         height: field.height,
         decoration: pw.BoxDecoration(
-          color: fillColor,
+          color: fillColorHex != null ? PdfColor.fromHex(fillColorHex) : fillColor,
           border: strokeColor != null
               ? pw.Border.all(color: strokeColor, width: strokeWidth)
               : null,

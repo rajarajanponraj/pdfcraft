@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'style_schema.dart';
+import 'package:pdfcraft_core/src/models/schema/style_schema.dart';
 
 part 'field_schema.freezed.dart';
 part 'field_schema.g.dart';

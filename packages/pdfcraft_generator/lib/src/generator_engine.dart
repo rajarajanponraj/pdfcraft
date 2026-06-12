@@ -3,12 +3,12 @@ import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdfcraft_core/pdfcraft_core.dart';
 
-import 'registry/generator_registry.dart';
+import 'package:pdfcraft_generator/src/registry/generator_registry.dart';
 
 class PdfGeneratorEngine {
   /// Generates a PDF byte array from a [Template].
-  Future<Uint8List> generate(Template template) async {
-    final pdf = pw.Document(version: PdfVersion.pdf_1_5, compress: true);
+  Future<Uint8List> generate(Template template, {bool interactive = false}) async {
+    final pdf = pw.Document();
 
     for (final pageSchema in template.pages) {
       final pageFormat = PdfPageFormat(
@@ -24,7 +24,11 @@ class PdfGeneratorEngine {
             final children = <pw.Widget>[];
 
             for (final field in pageSchema.fields) {
-              final widget = GeneratorRegistry.instance.renderField(field, context);
+              final widget = GeneratorRegistry.instance.renderField(
+                field, 
+                context, 
+                interactive: interactive,
+              );
               if (widget != null) {
                 children.add(widget);
               }

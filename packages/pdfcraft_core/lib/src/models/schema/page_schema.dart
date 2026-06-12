@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'field_schema.dart';
-import 'style_schema.dart';
+import 'package:pdfcraft_core/src/models/schema/field_schema.dart';
+import 'package:pdfcraft_core/src/models/schema/style_schema.dart';
 
 part 'page_schema.freezed.dart';
 part 'page_schema.g.dart';

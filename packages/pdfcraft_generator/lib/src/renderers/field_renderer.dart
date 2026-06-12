@@ -7,5 +7,6 @@ abstract class FieldRenderer {
   String get type;
 
   /// Renders the [field] into a [pw.Widget] suitable for absolute positioning.
-  pw.Widget render(FieldSchema field, pw.Context context);
+  /// If [interactive] is true, form fields should render as AcroForms.
+  pw.Widget render(FieldSchema field, pw.Context context, {bool interactive = false});
 }
