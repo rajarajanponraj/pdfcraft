@@ -18,7 +18,7 @@ Future<void> main(List<String> args) async {
   print('📦 Running "melos version"...');
   final versionProcess = await Process.start(
     'dart',
-    ['pub', 'global', 'run', 'melos', 'version'],
+    ['pub', 'global', 'run', 'melos', 'version', '--yes'],
     mode: ProcessStartMode.inheritStdio,
   );
   
@@ -43,7 +43,7 @@ Future<void> main(List<String> args) async {
   print('\n🎯 Publishing packages to pub.dev...');
   final publishProcess = await Process.start(
     'dart',
-    ['pub', 'global', 'run', 'melos', 'publish', '--no-dry-run'],
+    ['pub', 'global', 'run', 'melos', 'publish', '--no-dry-run', '--yes'],
     mode: ProcessStartMode.inheritStdio,
   );
   
