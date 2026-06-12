@@ -1,5 +1,13 @@
-# Launch Screen Assets
+# pdfcraft
 
-You can customize the launch screen with your own desired assets by replacing the image files in this directory.
+A powerful, plugin-based PDF generation library for Flutter.
 
-You can also do it by opening your Flutter project's Xcode project with `open ios/Runner.xcworkspace`, selecting `Runner/Assets.xcassets` in the Project Navigator and dropping in the desired images.
+## Features
+- Template-driven PDF generation
+- Interactive AcroForm support
+- Data binding & expressions
+- Drag-and-drop designer
+- Table and pagination support
+
+## Getting Started
+Please see the example for usage instructions.

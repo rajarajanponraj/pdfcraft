@@ -1,32 +1,13 @@
-# pdfcraft_core
+# pdfcraft
 
-Core models, schemas, and plugin contracts for the PDFCraft ecosystem.
+A powerful, plugin-based PDF generation library for Flutter.
 
 ## Features
+- Template-driven PDF generation
+- Interactive AcroForm support
+- Data binding & expressions
+- Drag-and-drop designer
+- Table and pagination support
 
-- **Schema Engine:** Fully serializable templates using `freezed`.
-- **Plugin Contract:** `PdfCraftPlugin` abstract interface.
-- **Plugin Registry:** Map strings to plugin builders.
-
-## Getting started
-
-```yaml
-dependencies:
-  pdfcraft_core: ^0.1.0
-```
-
-## Usage
-
-```dart
-import 'package:pdfcraft_core/pdfcraft_core.dart';
-
-void main() {
-  const template = Template(
-    version: '1.0',
-    pages: [],
-  );
-  
-  final json = template.toJson();
-  print(json);
-}
-```
+## Getting Started
+Please see the example for usage instructions.
