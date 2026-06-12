@@ -1,6 +1,6 @@
 name: pdfcraft_form
 description: "Form engine, expression evaluation, and data binding for the PDFCraft ecosystem."
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/rajarajanponraj/pdfcraft
 repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_form
 issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
@@ -12,9 +12,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  pdfcraft_core: ^1.0.0
+  pdfcraft_core: ^1.1.0
   petitparser: ^6.0.2
-  pdfcraft_generator: ^1.0.0
+  pdfcraft_generator: ^1.1.0
   pdf: ^3.10.8
 
 dev_dependencies:
