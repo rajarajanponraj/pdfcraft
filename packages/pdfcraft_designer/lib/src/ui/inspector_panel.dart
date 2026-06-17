@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:pdfcraft_designer/src/state/designer_state.dart';
 
 class InspectorPanel extends StatelessWidget {
-
   const InspectorPanel({
     super.key,
     required this.controller,
@@ -52,11 +51,16 @@ class InspectorPanel extends StatelessWidget {
                 child: ListView(
                   padding: const EdgeInsets.all(16),
                   children: [
-                    Text('Type: ${field.type}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                    Text(
+                      'Type: ${field.type}',
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     const SizedBox(height: 8),
-                    Text('ID: ${field.id}', style: const TextStyle(fontSize: 12, color: Colors.grey)),
+                    Text(
+                      'ID: ${field.id}',
+                      style: const TextStyle(fontSize: 12, color: Colors.grey),
+                    ),
                     const Divider(height: 32),
-                    
                     _PropertyInput(
                       label: 'X Position',
                       value: field.x,
@@ -97,7 +101,6 @@ class InspectorPanel extends StatelessWidget {
 }
 
 class _PropertyInput extends StatefulWidget {
-
   const _PropertyInput({
     required this.label,
     required this.value,
@@ -145,7 +148,8 @@ class _PropertyInputState extends State<_PropertyInput> {
         decoration: InputDecoration(
           labelText: widget.label,
           border: const OutlineInputBorder(),
-          contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         ),
         keyboardType: const TextInputType.numberWithOptions(decimal: true),
         inputFormatters: [

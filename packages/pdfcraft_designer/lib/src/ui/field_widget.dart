@@ -4,7 +4,6 @@ import 'package:pdfcraft_designer/src/state/designer_state.dart';
 import 'package:pdfcraft_designer/src/utils/snapping.dart';
 
 class FieldWidget extends StatefulWidget {
-
   const FieldWidget({
     super.key,
     required this.field,
@@ -45,11 +44,14 @@ class _FieldWidgetState extends State<FieldWidget> {
       targetY = SnappingUtils.snap(targetY, widget.controller.gridSize);
     }
 
-    widget.controller.updateFieldWithGuidelines(widget.field.copyWith(x: targetX, y: targetY));
+    widget.controller.updateFieldWithGuidelines(
+      widget.field.copyWith(x: targetX, y: targetY),
+    );
   }
 
   void _onPanEnd(DragEndDetails details) {
     widget.controller.clearGuidelines();
+    widget.controller.commitAction();
   }
 
   void _onResizeStart(DragStartDetails details) {
@@ -109,16 +111,19 @@ class _FieldWidgetState extends State<FieldWidget> {
     if (newW < 10) newW = 10;
     if (newH < 10) newH = 10;
 
-    widget.controller.updateFieldWithGuidelines(widget.field.copyWith(
-      x: newX,
-      y: newY,
-      width: newW,
-      height: newH,
-    ),);
+    widget.controller.updateFieldWithGuidelines(
+      widget.field.copyWith(
+        x: newX,
+        y: newY,
+        width: newW,
+        height: newH,
+      ),
+    );
   }
 
   void _onResizeEnd(DragEndDetails details) {
     widget.controller.clearGuidelines();
+    widget.controller.commitAction();
   }
 
   @override

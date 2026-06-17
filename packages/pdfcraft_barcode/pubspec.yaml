@@ -1,0 +1,24 @@
+name: pdfcraft_barcode
+description: "Barcode engine supporting Code128, EAN13, and UPC for the PDFCraft ecosystem."
+version: 1.1.0
+homepage: https://github.com/rajarajanponraj/pdfcraft
+repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_barcode
+issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
+
+environment:
+  sdk: ^3.3.0
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pdfcraft_core: ^1.1.0
+  pdfcraft_generator: ^1.1.0
+  pdf: ^3.10.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
+
+flutter:

@@ -3,13 +3,17 @@ import 'package:pdfcraft_core/pdfcraft_core.dart';
 
 /// Manages the state of the PDF template being designed.
 class DesignerController extends ChangeNotifier {
-
   DesignerController({
     required Template initialTemplate,
   })  : _template = initialTemplate,
         _activePageId = initialTemplate.pages.isNotEmpty
             ? initialTemplate.pages.first.id
-            : 'default_page_id';
+            : 'default_page_id' {
+    _history.add(_template);
+  }
+
+  final List<Template> _history = [];
+  int _historyIndex = 0;
   Template _template;
   String _activePageId;
   String? _selectedFieldId;
@@ -28,10 +32,71 @@ class DesignerController extends ChangeNotifier {
   List<double> get verticalGuidelines => _verticalGuidelines;
   List<double> get horizontalGuidelines => _horizontalGuidelines;
 
+  bool get canUndo => _historyIndex > 0;
+  bool get canRedo => _historyIndex < _history.length - 1;
+
+  void undo() {
+    if (canUndo) {
+      _historyIndex--;
+      _template = _history[_historyIndex];
+      _selectedFieldId = null;
+      notifyListeners();
+    }
+  }
+
+  void redo() {
+    if (canRedo) {
+      _historyIndex++;
+      _template = _history[_historyIndex];
+      _selectedFieldId = null;
+      notifyListeners();
+    }
+  }
+
+  void commitAction() {
+    if (_historyIndex < _history.length - 1) {
+      _history.removeRange(_historyIndex + 1, _history.length);
+    }
+    if (_history.isNotEmpty && _history.last == _template) return;
+
+    _history.add(_template);
+    if (_history.length > 50) {
+      _history.removeAt(0);
+    } else {
+      _historyIndex++;
+    }
+    notifyListeners();
+  }
+
   // ignore: avoid_positional_boolean_parameters
   void toggleSnapping(bool value) {
     _enableSnapping = value;
     notifyListeners();
+  }
+
+  FieldSchema? _clipboard;
+
+  void copySelectedField() {
+    if (_selectedFieldId != null) {
+      _clipboard = selectedField;
+    }
+  }
+
+  void pasteField() {
+    if (_clipboard != null) {
+      final newId = 'field_${DateTime.now().microsecondsSinceEpoch}';
+      final pastedField = _clipboard!.copyWith(
+        id: newId,
+        x: _clipboard!.x + 10,
+        y: _clipboard!.y + 10,
+      );
+      addField(pastedField);
+    }
+  }
+
+  void duplicateSelectedField() {
+    copySelectedField();
+    pasteField();
   }
 
   void setGridSize(double size) {
@@ -81,6 +146,7 @@ class DesignerController extends ChangeNotifier {
     final updatedPage = page.copyWith(fields: [...page.fields, field]);
     _updatePage(updatedPage);
     _selectedFieldId = field.id;
+    commitAction();
     notifyListeners();
   }
 
@@ -88,6 +154,7 @@ class DesignerController extends ChangeNotifier {
     _updateFieldInternal(field);
     _verticalGuidelines.clear();
     _horizontalGuidelines.clear();
+    commitAction();
     notifyListeners();
   }
 
@@ -110,7 +177,8 @@ class DesignerController extends ChangeNotifier {
         if ((field.x - other.x).abs() < snapThreshold) {
           newX = other.x;
           _verticalGuidelines.add(newX);
-        } else if ((field.x + field.width - (other.x + other.width)).abs() < snapThreshold) {
+        } else if ((field.x + field.width - (other.x + other.width)).abs() <
+            snapThreshold) {
           newX = other.x + other.width - field.width;
           _verticalGuidelines.add(other.x + other.width);
         } else if ((field.x - (other.x + other.width)).abs() < snapThreshold) {
@@ -122,7 +190,8 @@ class DesignerController extends ChangeNotifier {
         if ((field.y - other.y).abs() < snapThreshold) {
           newY = other.y;
           _horizontalGuidelines.add(newY);
-        } else if ((field.y + field.height - (other.y + other.height)).abs() < snapThreshold) {
+        } else if ((field.y + field.height - (other.y + other.height)).abs() <
+            snapThreshold) {
           newY = other.y + other.height - field.height;
           _horizontalGuidelines.add(other.y + other.height);
         } else if ((field.y - (other.y + other.height)).abs() < snapThreshold) {
@@ -157,15 +226,17 @@ class DesignerController extends ChangeNotifier {
 
   void deleteSelectedField() {
     if (_selectedFieldId == null) return;
-    
+
     final page = activePage;
     if (page == null) return;
 
-    final updatedFields = page.fields.where((f) => f.id != _selectedFieldId).toList();
+    final updatedFields =
+        page.fields.where((f) => f.id != _selectedFieldId).toList();
     final updatedPage = page.copyWith(fields: updatedFields);
     _updatePage(updatedPage);
-    
+
     _selectedFieldId = null;
+    commitAction();
     notifyListeners();
   }
 
