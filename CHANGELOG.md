@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-06-17
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`pdfcraft_barcode` - `v1.2.0`](#pdfcraft_barcode---v120)
+ - [`pdfcraft_designer` - `v1.2.0`](#pdfcraft_designer---v120)
+ - [`pdfcraft_generator` - `v1.2.0`](#pdfcraft_generator---v120)
+ - [`pdfcraft_qrcode` - `v1.2.0`](#pdfcraft_qrcode---v120)
+ - [`pdfcraft_table` - `v1.1.1`](#pdfcraft_table---v111)
+ - [`pdfcraft_form` - `v1.1.1`](#pdfcraft_form---v111)
+
+Packages with dependency updates only:
+
+> Packages listed below depend on other packages in this workspace that have had changes. Their versions have been incremented to bump the minimum dependency versions of the packages they depend upon in this project.
+
+ - `pdfcraft_table` - `v1.1.1`
+ - `pdfcraft_form` - `v1.1.1`
+
+---
+
+#### `pdfcraft_barcode` - `v1.2.0`
+
+ - **FEAT**: implement pdfcraft_barcode and pdfcraft_qrcode. ([0bc33997](https://github.com/rajarajanponraj/pdfcraft/commit/0bc33997fc060fd69e973277d0b28a754bdf5c09))
+
+#### `pdfcraft_designer` - `v1.2.0`
+
+ - **FEAT**: implement pdfcraft_barcode and pdfcraft_qrcode. ([0bc33997](https://github.com/rajarajanponraj/pdfcraft/commit/0bc33997fc060fd69e973277d0b28a754bdf5c09))
+
+#### `pdfcraft_generator` - `v1.2.0`
+
+ - **FEAT**: implement pdfcraft_barcode and pdfcraft_qrcode. ([0bc33997](https://github.com/rajarajanponraj/pdfcraft/commit/0bc33997fc060fd69e973277d0b28a754bdf5c09))
+
+#### `pdfcraft_qrcode` - `v1.2.0`
+
+ - **FEAT**: implement pdfcraft_barcode and pdfcraft_qrcode. ([0bc33997](https://github.com/rajarajanponraj/pdfcraft/commit/0bc33997fc060fd69e973277d0b28a754bdf5c09))
+
+
 ## 2026-06-12
 
 ### Changes

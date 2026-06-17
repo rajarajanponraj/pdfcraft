@@ -1,0 +1,4 @@
+## 1.2.0
+
+ - **FEAT**: implement pdfcraft_barcode and pdfcraft_qrcode. ([0bc33997](https://github.com/rajarajanponraj/pdfcraft/commit/0bc33997fc060fd69e973277d0b28a754bdf5c09))
+

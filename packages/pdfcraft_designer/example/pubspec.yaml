@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  pdfcraft_designer: ^1.1.0
+  pdfcraft_designer: ^1.2.0
   pdfcraft_core: ^1.1.0
 
   cupertino_icons: ^1.0.8

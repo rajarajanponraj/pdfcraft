@@ -1,6 +1,6 @@
 name: pdfcraft_designer
 description: "Visual drag-and-drop designer and canvas UI for the PDFCraft ecosystem."
-version: 1.1.0
+version: 1.2.0
 homepage: https://github.com/rajarajanponraj/pdfcraft
 repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_designer
 issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
