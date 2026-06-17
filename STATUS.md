@@ -9,10 +9,10 @@ This document tracks the release status and roadmap for the entire PDFCraft ecos
 | `pdfcraft_core` | ✅ Ready to Publish | `v0.1.0` | Week 1 | Core schemas, models, and plugin contracts completed. Pub.dev assets generated. |
 | `pdfcraft_generator` | ✅ Ready to Publish | `v0.1.0` | Week 3 | PDF export engine, Text/Image renderers, custom font support completed. Pub.dev assets generated. |
 | `pdfcraft_designer` | 🚧 In Progress | `v0.1.0` | Week 8-11 | Visual drag-and-drop builder, canvas, selection, zoom, history stack. |
-| `pdfcraft_form` | ⏳ Pending | - | Week 12-15 | Form engine, dynamic forms, text fields, checkboxes, validation, expression engine. |
-| `pdfcraft_table` | ⏳ Pending | - | Week 16-17 | Dynamic rows, merged cells, auto height, repeating headers. |
-| `pdfcraft_barcode` | ✅ Ready to Publish | `v1.1.0` | Week 21 | Code128, EAN13, UPC support. |
-| `pdfcraft_qrcode` | ✅ Ready to Publish | `v1.1.0` | Week 22 | Static & Dynamic QR support. |
+| `pdfcraft_form` | ✅ Released | `v1.1.1` | Week 12-15 | Form engine, dynamic forms, text fields, checkboxes, validation, expression engine. |
+| `pdfcraft_table` | ✅ Released | `v1.1.1` | Week 16-17 | Dynamic rows, merged cells, auto height, repeating headers. |
+| `pdfcraft_barcode` | ✅ Released | `v1.2.0` | Week 21 | Code128, EAN13, UPC support. |
+| `pdfcraft_qrcode` | ✅ Released | `v1.2.0` | Week 22 | Static & Dynamic QR support. |
 | `pdfcraft_svg` | ⏳ Pending | - | Week 27 | SVG import and rendering. |
 | `pdfcraft_richtext` | ⏳ Pending | - | Week 28 | Styled text and HTML import. |
 | `pdfcraft_signature` | ⏳ Pending | - | Week 29-30| Digital signature capture and rendering. |
