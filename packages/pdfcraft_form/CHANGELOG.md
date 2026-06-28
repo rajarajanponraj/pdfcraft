@@ -1,3 +1,7 @@
+## 1.1.2
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
 ## 1.1.1
 
  - Update a dependency to the latest release.

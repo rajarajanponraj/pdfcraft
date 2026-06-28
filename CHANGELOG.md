@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-06-28
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`pdfcraft_barcode` - `v1.2.1`](#pdfcraft_barcode---v121)
+ - [`pdfcraft_core` - `v1.1.1`](#pdfcraft_core---v111)
+ - [`pdfcraft_designer` - `v1.2.1`](#pdfcraft_designer---v121)
+ - [`pdfcraft_form` - `v1.1.2`](#pdfcraft_form---v112)
+ - [`pdfcraft_generator` - `v1.2.1`](#pdfcraft_generator---v121)
+ - [`pdfcraft_qrcode` - `v1.2.1`](#pdfcraft_qrcode---v121)
+ - [`pdfcraft_table` - `v1.1.2`](#pdfcraft_table---v112)
+
+---
+
+#### `pdfcraft_barcode` - `v1.2.1`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+#### `pdfcraft_core` - `v1.1.1`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+#### `pdfcraft_designer` - `v1.2.1`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+#### `pdfcraft_form` - `v1.1.2`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+#### `pdfcraft_generator` - `v1.2.1`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+#### `pdfcraft_qrcode` - `v1.2.1`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+#### `pdfcraft_table` - `v1.1.2`
+
+ - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))
+
+
 ## 2026-06-17
 
 ### Changes
