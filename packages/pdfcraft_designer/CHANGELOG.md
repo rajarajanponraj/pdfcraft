@@ -1,3 +1,7 @@
+## 1.2.2
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
 ## 1.2.1
 
  - **DOCS**: overhaul package documentation and fix example linting issues. ([e23df845](https://github.com/rajarajanponraj/pdfcraft/commit/e23df8454a276536186170b20c1fac65c0321b50))

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-07-04
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`pdfcraft_barcode` - `v1.2.2`](#pdfcraft_barcode---v122)
+ - [`pdfcraft_core` - `v1.1.2`](#pdfcraft_core---v112)
+ - [`pdfcraft_designer` - `v1.2.2`](#pdfcraft_designer---v122)
+ - [`pdfcraft_form` - `v1.1.3`](#pdfcraft_form---v113)
+ - [`pdfcraft_generator` - `v1.2.2`](#pdfcraft_generator---v122)
+ - [`pdfcraft_qrcode` - `v1.2.2`](#pdfcraft_qrcode---v122)
+ - [`pdfcraft_table` - `v1.1.3`](#pdfcraft_table---v113)
+
+---
+
+#### `pdfcraft_barcode` - `v1.2.2`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+#### `pdfcraft_core` - `v1.1.2`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+#### `pdfcraft_designer` - `v1.2.2`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+#### `pdfcraft_form` - `v1.1.3`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+#### `pdfcraft_generator` - `v1.2.2`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+#### `pdfcraft_qrcode` - `v1.2.2`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+#### `pdfcraft_table` - `v1.1.3`
+
+ - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
+
+
 ## 2026-06-28
 
 ### Changes
