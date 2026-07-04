@@ -94,6 +94,14 @@ When table content exceeds page height, `TablePaginator` calculates cell heights
 
 ---
 
+## 💖 Support the Project
+
+If you find this package useful, please consider supporting its development:
+* [Ko-fi](https://ko-fi.com/rajarajanp)
+* [PayPal](https://www.paypal.com/ncp/payment/8UD5B3C8LH8HJ)
+
+---
+
 ## 📄 License
 
 This package is released under the [MIT License](LICENSE).

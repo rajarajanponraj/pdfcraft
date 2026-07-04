@@ -5,7 +5,7 @@
   "packages": [
     {
       "name": "pdfcraft_barcode",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "dependencies": [
         "flutter",
         "pdf",
@@ -19,7 +19,7 @@
     },
     {
       "name": "pdfcraft_generator",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "dependencies": [
         "flutter",
         "pdf",
@@ -28,7 +28,7 @@
     },
     {
       "name": "pdfcraft_core",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "dependencies": [
         "flutter",
         "freezed_annotation",

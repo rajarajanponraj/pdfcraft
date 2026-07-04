@@ -5,6 +5,10 @@ homepage: https://github.com/rajarajanponraj/pdfcraft
 repository: https://github.com/rajarajanponraj/pdfcraft/tree/main/packages/pdfcraft_designer
 issue_tracker: https://github.com/rajarajanponraj/pdfcraft/issues
 
+funding:
+  - https://ko-fi.com/rajarajanp
+  - https://www.paypal.com/ncp/payment/8UD5B3C8LH8HJ
+
 environment:
   sdk: ^3.3.0
   flutter: ">=3.19.0"
