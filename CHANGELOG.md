@@ -15,6 +15,43 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`pdfcraft_core` - `v1.1.3`](#pdfcraft_core---v113)
+ - [`pdfcraft_generator` - `v1.2.3`](#pdfcraft_generator---v123)
+ - [`pdfcraft_barcode` - `v1.2.3`](#pdfcraft_barcode---v123)
+ - [`pdfcraft_designer` - `v1.2.3`](#pdfcraft_designer---v123)
+ - [`pdfcraft_form` - `v1.1.4`](#pdfcraft_form---v114)
+ - [`pdfcraft_qrcode` - `v1.2.3`](#pdfcraft_qrcode---v123)
+ - [`pdfcraft_table` - `v1.1.4`](#pdfcraft_table---v114)
+
+---
+
+#### `pdfcraft_core` - `v1.1.3`
+
+#### `pdfcraft_generator` - `v1.2.3`
+
+#### `pdfcraft_barcode` - `v1.2.3`
+
+#### `pdfcraft_designer` - `v1.2.3`
+
+#### `pdfcraft_form` - `v1.1.4`
+
+#### `pdfcraft_qrcode` - `v1.2.3`
+
+#### `pdfcraft_table` - `v1.1.4`
+
+
+## 2026-07-23
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`example` - `v1.1.0`](#example---v110)
 
 ---

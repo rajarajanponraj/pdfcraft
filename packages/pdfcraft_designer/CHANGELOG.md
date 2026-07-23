@@ -1,3 +1,5 @@
+## 1.2.3
+
 ## 1.2.2
 
  - **DOCS**: add funding and support links to all packages. ([32deabdf](https://github.com/rajarajanponraj/pdfcraft/commit/32deabdf3d33f4b0cfe741bda4ebdddf675bd1e5))
