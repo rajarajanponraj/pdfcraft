@@ -30,7 +30,7 @@ class BarcodeRenderer implements FieldRenderer {
     if (colorHex != null && colorHex.isNotEmpty) {
       try {
         color = PdfColor.fromHex(colorHex);
-      } catch (_) {
+      } on Exception catch (_) {
         // Fallback to null if invalid hex
       }
     }

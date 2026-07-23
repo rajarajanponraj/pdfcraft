@@ -16,15 +16,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  freezed_annotation: ^2.4.1
+  freezed_annotation: ^3.1.0
   json_annotation: ^4.8.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^6.0.0
+  very_good_analysis: ^10.3.0
   build_runner: ^2.4.9
-  freezed: ^2.5.2
+  freezed: ^4.0.0-dev.3
   json_serializable: ^6.8.0
 
 flutter:

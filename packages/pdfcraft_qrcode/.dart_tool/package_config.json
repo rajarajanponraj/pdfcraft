@@ -81,7 +81,7 @@
     },
     {
       "name": "freezed_annotation",
-      "rootUri": "file:///C:/Users/raja/AppData/Local/Pub/Cache/hosted/pub.dev/freezed_annotation-2.4.4",
+      "rootUri": "file:///C:/Users/raja/AppData/Local/Pub/Cache/hosted/pub.dev/freezed_annotation-3.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -237,9 +237,9 @@
     },
     {
       "name": "very_good_analysis",
-      "rootUri": "file:///C:/Users/raja/AppData/Local/Pub/Cache/hosted/pub.dev/very_good_analysis-6.0.0",
+      "rootUri": "file:///C:/Users/raja/AppData/Local/Pub/Cache/hosted/pub.dev/very_good_analysis-10.3.0",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.12"
     },
     {
       "name": "vm_service",

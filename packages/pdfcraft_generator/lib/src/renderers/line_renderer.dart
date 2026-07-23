@@ -31,7 +31,7 @@ class LineRenderer implements FieldRenderer {
         height: field.height,
         child: pw.CustomPaint(
           size: PdfPoint(field.width, field.height),
-          painter: (PdfGraphics canvas, PdfPoint size) {
+          painter: (canvas, size) {
             canvas
               ..setStrokeColor(strokeColor)
               ..setLineWidth(strokeWidth)

@@ -1,5 +1,5 @@
-/// Utility functions for grid snapping.
-library snapping;
+// Utility functions for grid snapping.
+
 
 class SnappingUtils {
   /// Snaps the [value] to the nearest multiple of [gridSize].

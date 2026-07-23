@@ -20,7 +20,7 @@ class PdfGeneratorEngine {
       pdf.addPage(
         pw.Page(
           pageFormat: pageFormat,
-          build: (pw.Context context) {
+          build: (context) {
             final children = <pw.Widget>[];
 
             for (final field in pageSchema.fields) {

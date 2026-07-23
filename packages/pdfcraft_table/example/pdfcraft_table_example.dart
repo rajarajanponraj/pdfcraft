@@ -1,3 +1,4 @@
+// Example files are allowed to print to the console.
 // ignore_for_file: avoid_print
 import 'package:pdfcraft_core/pdfcraft_core.dart';
 import 'package:pdfcraft_generator/pdfcraft_generator.dart';

@@ -68,6 +68,7 @@ class DesignerController extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Simple toggle boolean doesn't need to be named.
   // ignore: avoid_positional_boolean_parameters
   void toggleSnapping(bool value) {
     _enableSnapping = value;
@@ -105,11 +106,10 @@ class DesignerController extends ChangeNotifier {
   }
 
   PageSchema? get activePage {
-    try {
-      return _template.pages.firstWhere((page) => page.id == _activePageId);
-    } catch (e) {
-      return null;
+    for (final page in _template.pages) {
+      if (page.id == _activePageId) return page;
     }
+    return null;
   }
 
   FieldSchema? get selectedField {
@@ -117,11 +117,10 @@ class DesignerController extends ChangeNotifier {
     final page = activePage;
     if (page == null) return null;
 
-    try {
-      return page.fields.firstWhere((f) => f.id == _selectedFieldId);
-    } catch (e) {
-      return null;
+    for (final f in page.fields) {
+      if (f.id == _selectedFieldId) return f;
     }
+    return null;
   }
 
   void selectField(String? id) {

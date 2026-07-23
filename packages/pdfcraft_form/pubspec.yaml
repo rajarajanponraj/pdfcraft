@@ -17,13 +17,13 @@ dependencies:
   flutter:
     sdk: flutter
   pdfcraft_core: ^1.1.2
-  petitparser: ^6.0.2
+  petitparser: ^7.0.2
   pdfcraft_generator: ^1.2.2
   pdf: ^3.10.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^6.0.0
+  very_good_analysis: ^10.3.0
 
 flutter:

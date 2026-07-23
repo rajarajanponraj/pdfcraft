@@ -37,7 +37,7 @@ class TableRenderer implements FieldRenderer {
       decoration: const pw.BoxDecoration(color: PdfColors.grey300),
       children: columns.map((col) => pw.Padding(
         padding: const pw.EdgeInsets.all(4),
-        child: pw.Text(col.toUpperCase(), style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
+        child: pw.Text(col.toUpperCase(), style: const pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
       ),).toList(),
     );
 

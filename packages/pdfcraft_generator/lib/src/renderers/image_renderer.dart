@@ -28,7 +28,7 @@ class ImageRenderer implements FieldRenderer {
           child: pw.Image(memoryImage),
         ),
       );
-    } catch (e) {
+    } on Exception catch (_) {
       // Return empty box if image decoding fails
       return pw.SizedBox();
     }
